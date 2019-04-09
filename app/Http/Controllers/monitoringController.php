@@ -109,4 +109,17 @@ class monitoringController extends Controller
 
         return response()->json($data);
     }
+
+    public function test() {
+        sensor::create([
+            'sensor1' => '10',
+            'sensor2' => '20',
+            'sensor3' => '30',
+            'sensor4' => '40',
+        ]);
+    }
+
+    public function home() {
+        return 'home';
+    }
 }

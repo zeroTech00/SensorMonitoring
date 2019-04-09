@@ -14,4 +14,7 @@
 Route::get('/','monitoringController@index');
 Route::get('/store/{sensor1}/{sensor2}/{sensor3}/{sensor4}','monitoringController@store');
 Route::get('/ambildata','monitoringController@ambil');
+Route::get('/test','monitoringController@test');
+Route::get('/home','monitoringController@home');
+
 
